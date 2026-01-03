@@ -1,2 +1,15 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Ignorar arquivos gerados e de documentação nas estatísticas
+*.html linguist-generated=true
+*.css linguist-generated=true
+*.js linguist-generated=true
+*.pdf linguist-generated=true
+
+# Ignorar dados
+*.csv linguist-generated=true
+*.dat linguist-generated=true
+*.json linguist-generated=true
+*.xml linguist-generated=true
+
+# Forçar detecção (Opcional, mas recomendado)
+*.Rmd linguist-language=R
+*.ipynb linguist-language=Python
